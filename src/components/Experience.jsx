@@ -11,7 +11,7 @@ const Experience = () => {
           </div>
           <div className='w-full max-w-xl lg:w-3/4'>
           
-          <p className='mb-2 font-semibold'>Senior Developer- <span className=''>Google</span></p>
+          <p className='mb-2 font-semibold'>Junior Developer- <span className=''>Google</span></p>
           <p className=' mb-2 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque est et maxime quibusdam minus eveniet, a molestiae qui praesentium facilis.</p>
 
           <span className='mr-2 rounded bg-neutral-800 text-purple-700 py-1 px-1'>Java</span>
