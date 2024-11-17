@@ -1,33 +1,66 @@
 import React from 'react'
-import profile from '../assets/profile-500.png'
+import profilePic from '../assets/profile-500.png'
 import { HERO_CONTENT } from '../constants'
+
+import {motion} from 'framer-motion';
+
+const container = (delay)=>({
+
+    hidden:{
+        x:-100,opacity:0 },
+    visible:{
+        x:0,
+        opacity:1,
+        transition:{duration:0.5,delay: delay  },
+
+    },
+})
 
 const Hero = () => {
   return (
-    <div className='border-b border-neutral-600  '>
-      <div className='flex flex-wrap '>
-        <div className='w-full lg:w-1/2 lg:pl-10'>
-        <div className='flex flex-col items-center lg:items-start'>
+    <div className='border-b border-neutral-700 pb-4 md:pl-10 lg:m-35'>
+        <div className='flex flex-wrap'>
+            <div className='w-full lg:w-1/2'>
+            <div className='flex flex-col items-center lg:items-start'>
+                <motion.h1
+                variants={container(0.4)}
+                initial="hidden"
+                animate="visible"
+                className='pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl'>Sachin kr singh</motion.h1>
+               
+                <motion.span
+                variants={container(0.5)}
+                initial="hidden"
+                animate="visible"
+                className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>
+                    Full Stack Developer
+                </motion.span>
 
-        <h1 className='pb-16 text-4xl tracking-tight font-thin text-6xl lg:mt-16 lg:text-8xl'>Sachin kr Singh</h1>
-        <h2 className='pb-5 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>Backend Developer</h2>
 
-        <h2 className='pb-10 font-thin'>{HERO_CONTENT}</h2>
-        </div>
-        
-     
-        </div>
-        <div className='w-full lg:w-1/2 lg:p-20 lg:pt-0 lg:pr-0'>
-        <div className='flex justify-center '>
+                <motion.p 
+                
+                variants={container(1)}
+                initial="hidden"
+                animate="visible"
+                className='my-2 max-w-xl py-6 font-light tracking-tighter'>
+                    {HERO_CONTENT}
+                </motion.p>
+       
+            </div>
+            </div>
+            <div className="w-full lg:w-1/2 lg:p-8">
+                <div className='flex justify-center'>
+                <motion.img 
+                initial={{x:50,opacity:0}}
+                animate={{x:0,opacity:1}}
+                transition={{duration:1,delay:1.2}}
+                src={profilePic} alt="Profile pic" />
 
-        <img src={profile} alt="" className='rounded-3xl' />
+                </div>
+            </div>
         </div>
-        
-        
-        </div>
-      </div>
     </div>
-  )
+  ) 
 }
 
 export default Hero
