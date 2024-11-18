@@ -29,7 +29,7 @@ const NavBar = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <FaLinkedin className="text-blue-400 transition-colors" />
+          <FaLinkedin className="text-blue-400 transition-colors text-3xl" />
         </a>
 
         {/* GitHub */}
@@ -39,7 +39,7 @@ const NavBar = () => {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <FaSquareGithub className="text-gray-300 transition-colors text-transparent " />
+          <FaSquareGithub className="text-white transition-colors text-transparent text-3xl " />
         </a>
 
         {/* Instagram */}
@@ -49,7 +49,7 @@ const NavBar = () => {
           rel="noopener noreferrer"
           aria-label="Instagram"
         >
-          <FaInstagram className="text-purple-400" />
+          <FaInstagram className="text-purple-400 text-3xl" />
         </a>
 
         {/* Email */}
