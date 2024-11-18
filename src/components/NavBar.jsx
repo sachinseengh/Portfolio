@@ -1,32 +1,27 @@
 import React from 'react';
 import { FaLinkedin, FaSquareGithub, FaInstagram } from 'react-icons/fa6';
 import { CgMail } from 'react-icons/cg';
-import { useTypewriter,Cursor } from 'react-simple-typewriter';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+
 const NavBar = () => {
 
-
   const [text] = useTypewriter({
-    words: ['SACHIN SINGH'],
+    words: ['<SACHIN/>'],
     loop: 0,  // You can set it to true for infinite loops
     typeSpeed: 150,
     deleteSpeed: 150,
     delaySpeed: 1000,
   });
 
-
-
   return (
     <nav className='mb-5 flex items-center justify-between py-6'>
       
       <div className='flex flex-shrink-0 items-center'>
-          {/* Uncomment the logo if needed */}
-          {/* <img className='mx-2 w-10' src={logo} alt="Logo" /> */}
-          <span className='text-4xl'>{text}</span>
-          <span className='text-4xl text-red-600'><Cursor/></span>
-         
-        </div>
+        <span className='text-4xl'>{text}</span>
+        <span className='text-4xl text-red-600'><Cursor/></span>
+      </div>
 
-      <div className='m-8 flex items-center justify-center gap-5 text-3xl '>
+      <div className='m-8 flex items-center justify-center gap-5 text-3xl'>
         {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/sachin-seengh/"
@@ -34,7 +29,7 @@ const NavBar = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <FaLinkedin />
+          <FaLinkedin className="text-blue-400 transition-colors" />
         </a>
 
         {/* GitHub */}
@@ -44,7 +39,7 @@ const NavBar = () => {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <FaSquareGithub />
+          <FaSquareGithub className="text-gray-300 transition-colors text-transparent " />
         </a>
 
         {/* Instagram */}
@@ -54,15 +49,16 @@ const NavBar = () => {
           rel="noopener noreferrer"
           aria-label="Instagram"
         >
-          <FaInstagram />
+          <FaInstagram className="text-purple-400" />
         </a>
 
         {/* Email */}
         <a
           href="mailto:sachinseengh@gmail.com"
           aria-label="Email"
+          
         >
-          <CgMail className='text-4xl' />
+          <CgMail className="text-red-500  transition-colors text-4xl" />
         </a>
       </div>
     </nav>

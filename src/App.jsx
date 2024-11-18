@@ -66,7 +66,7 @@ function App() {
     <div className='overflow-x-hidden antialiased text-neutral-300'>
       {/* Gridded Background with Solid Color */}
       <div className="fixed top-0 left-0 w-full h-full -z-10 bg-slate-950">
-        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] blur-md"></div>
       </div>
 
       {/* Main Content or Icon Cloud */}
