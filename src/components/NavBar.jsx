@@ -18,7 +18,7 @@ const NavBar = () => {
       
       <div className='flex flex-shrink-0 items-center'>
         <span className='text-4xl'>{text}</span>
-        <span className='text-4xl text-red-600'><Cursor/></span>
+        <span className='text-4xl text-red-500'><Cursor/></span>
       </div>
 
       <div className='m-8 flex items-center justify-center gap-5 text-3xl'>
