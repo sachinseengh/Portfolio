@@ -12,6 +12,7 @@ import Technologies from './components/Technologies';
 import Experience from './components/Experience';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import { useTypewriter } from 'react-simple-typewriter';
 
 // IconCloud Component
 const IconCloud = () => {
@@ -21,8 +22,12 @@ const IconCloud = () => {
     siWordpress, siBootstrap, siFigma, siHtml5, siCss3, siC, siPhp, siDotnet
   ].map(icon => renderSimpleIcon({ icon, size: 142 }));
 
+
+  
+
   return (
-    <div style={{ height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <div>
+    <div  className="mt-11" style={{ height: '80vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Cloud options={{
         depth: 0.8,  // Increase depth for a more dynamic effect
         initialSpeed: 0.4,  // Set a speed for automatic rotation
@@ -34,6 +39,11 @@ const IconCloud = () => {
       }}>
         {icons}
       </Cloud>
+      
+    </div>
+    <div className='text-center justify-center'>
+      <h1 className='text-blue-400 '>Loading......</h1>
+    </div>
     </div>
   );
 };
