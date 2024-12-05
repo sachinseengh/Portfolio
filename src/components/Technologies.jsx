@@ -80,7 +80,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           className='rounded-2xl border-4 border-neutral-800 p-4'>
-          <SiSpringboot className='text-7xl text-green-600' />
+          <SiSpringboot className='text-7xl text-green-700' />
         </motion.div>
 
         {/* Photoshop */}
