@@ -54,6 +54,16 @@ export const PROJECTS = [
   project_Link:"https://sachinseengh.github.io/TextToolBox/"
 
   },
+  {
+    title: "Rock Paper Scissor",
+    image: project4,
+    description:
+      "Rock Paper Scissor Game",
+    technologies: ["HTML", "CSS","JS"],
+
+  project_Link:"https://github.com/sachinseengh/Rock_Paper_Scissor"
+
+  },
 ];
 
 export const CONTACT = {

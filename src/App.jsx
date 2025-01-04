@@ -14,6 +14,7 @@ import Project from './components/Project';
 import Contact from './components/Contact';
 import { useTypewriter } from 'react-simple-typewriter';
 
+
 // IconCloud Component
 const IconCloud = () => {
   // Array of icons to display
@@ -52,6 +53,7 @@ const IconCloud = () => {
 const MainContent = () => (
   <div className='container mx-auto px-6 lg:px-10 z-10 relative'>
     <NavBar />
+ 
     <Hero />
     <About />
     <Technologies />
