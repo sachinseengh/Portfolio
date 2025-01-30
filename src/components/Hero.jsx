@@ -21,12 +21,12 @@ const Hero = () => {
     <div className="border-b border-neutral-700 pb-4 md:pl-10 lg:m-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-start lg:items-start">
             <motion.h1
               variants={container(0.4)}
               initial="hidden"
               animate="visible"
-              className="pb-4 lg:pb-7 font-serif tracking-tight lg:mt-16 lg:text-6xl text-5xl "
+              className="pb-4 lg:pb-7 font-serif tracking-tight lg:mt-16 lg:text-6xl text-4xl   "
             >
               Sachin kr singh
             </motion.h1>

@@ -14,14 +14,14 @@ const NavBar = () => {
   });
 
   return (
-    <nav className='mb-5 flex items-center justify-between py-6'>
+    <nav className='mb-5 flex items-center justify-between py-6 '>
       
-      <div className='flex flex-shrink-0 items-center '>
-        <span className='text-base md:text-2xl lg:text-4xl'>{text}</span>
+      <div className='flex  items-center w-full '>
+        <span className='text-xl md:text-2xl lg:text-4xl w-24 '>{text}</span>
         <span className='text-sm lg:text-4xl text-red-500'><Cursor/></span>
       </div>
 
-      <div className='m-8  flex items-center justify-center gap-4 text-3xl'>
+      <div className='m-8  flex items-center justify-center lg:gap-4 gap-2 '>
         {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/sachin-seengh/"
@@ -29,7 +29,7 @@ const NavBar = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <FaLinkedin className="text-blue-400 transition-colors text-3xl" />
+          <FaLinkedin className="text-blue-400 transition-colors text-xl lg:text-3xl " />
         </a>
 
         {/* GitHub */}
@@ -39,7 +39,7 @@ const NavBar = () => {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <FaSquareGithub className="text-white transition-colors text-transparent text-3xl " />
+          <FaSquareGithub className="text-white transition-colors text-transparent lg:text-3xl text-xl" />
         </a>
 
         {/* Instagram */}
@@ -49,7 +49,7 @@ const NavBar = () => {
           rel="noopener noreferrer"
           aria-label="Instagram"
         >
-          <FaInstagram className="text-purple-400 text-3xl" />
+          <FaInstagram className="text-purple-400 lg:text-3xl text-xl" />
         </a>
 
         {/* Email */}
@@ -58,7 +58,7 @@ const NavBar = () => {
           aria-label="Email"
           
         >
-          <CgMail className="text-red-500  transition-colors text-4xl" />
+          <CgMail className="text-red-500  transition-colors lg:text-4xl text-3xl  opacity-70" />
         </a>
       </div>
     </nav>

@@ -13,6 +13,7 @@ import Experience from './components/Experience';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import { useTypewriter } from 'react-simple-typewriter';
+import UnderDevelopment from './components/UnderDevelopment';
 
 // IconCloud Component
 const IconCloud = () => {
@@ -51,6 +52,8 @@ const IconCloud = () => {
 // Main Content Component
 const MainContent = () => (
   <div className='container mx-auto px-6 lg:px-10 z-10 relative'>
+
+<UnderDevelopment/>
     <NavBar />
     <Hero />
     <About />
@@ -58,6 +61,7 @@ const MainContent = () => (
     <Experience />
     <Project />
     <Contact />
+  
   </div>
 );
 
