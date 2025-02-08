@@ -8,8 +8,8 @@ const NavBar = () => {
   const [text] = useTypewriter({
     words: ['<SACHIN/>'],
     loop: 0,  // You can set it to true for infinite loops
-    typeSpeed: 150,
-    deleteSpeed: 150,
+    typeSpeed: 200,
+    deleteSpeed: 200,
     delaySpeed: 1000,
   });
 
@@ -17,8 +17,8 @@ const NavBar = () => {
     <nav className='mb-5 flex items-center justify-between py-6 '>
       
       <div className='flex  items-center w-full '>
-        <span className='text-xl md:text-2xl lg:text-4xl w-24 '>{text}</span>
-        <span className='text-sm lg:text-4xl text-red-500'><Cursor/></span>
+        <span className='text-xl md:text-2xl lg:text-4xl  '>{text}<span className='text-sm lg:text-4xl text-red-500'><Cursor/></span></span>
+ 
       </div>
 
       <div className='m-8  flex items-center justify-center lg:gap-4 gap-2 '>
